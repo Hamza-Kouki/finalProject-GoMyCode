@@ -1,3 +1,23 @@
+body {
+    background-color: #D6F5FD;
+    font-family: "gira-sans", "helvetica neue", helvetica, arial, sans-serif;
+    color: rgba(11, 17, 19, 0.7); }
+
+    body:before {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: '';
+        background-image: url("../../assets/res/images/background.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+        z-index: -1; }
+
+
 .hide-bullets {
     list-style:none;
     margin-left: -40px;
