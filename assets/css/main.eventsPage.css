@@ -1,5 +1,19 @@
 @import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,400italic");
 @import url("//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css");
+body:before {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    background-image: url("../../assets/res/images/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    z-index: -1; }
+    
 body {
     padding: 60px 0px;
 }
@@ -189,6 +203,11 @@ body {
     }
 }
 .orange{
-    background-color :#ffc10754;
+    background-color :#ffc10782;
+    background-size: 80% 100px;
+}
+
+.green{
+    background-color : #d7eac078;
     background-size: 80% 100px;
 }
