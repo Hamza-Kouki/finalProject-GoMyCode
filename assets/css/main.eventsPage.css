@@ -2,7 +2,6 @@
 @import url("//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css");
 body {
     padding: 60px 0px;
-    background-color: rgb(220, 220, 220);
 }
 
 .event-list {
@@ -188,4 +187,8 @@ body {
         width: 40px;
         padding: 10px 0px 9px;
     }
+}
+.orange{
+    background-color :#ffc10754;
+    background-size: 80% 100px;
 }
