@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alegreya&display=swap');
 body {
     background-color: #D6F5FD;
     font-family: "gira-sans", "helvetica neue", helvetica, arial, sans-serif;
@@ -31,3 +33,33 @@ body {
 .carousel-inner>.item>img, .carousel-inner>.item>a>img {
     width: 100%;
 }
+main{
+    padding-bottom: 25px;
+}
+/**************************************************/
+.infoPicture{
+    display: flex;
+      width : 98.9%;
+    height : 365px;
+    background: #6ad40069;
+    /*display: none;*/
+  }
+  .infoPicture img{
+    width: 50%; 
+    height: 365px;
+  }
+  #info_part{
+    padding-top : 30px;
+  }
+
+.sidebyside h3{
+    font-family: 'Gloria Hallelujah', cursive;
+   color : DodgerBlue ;
+   padding-left: 10px;
+}
+    .sidebyside p{
+        font-family: 'Alegreya', serif;
+        color: Tomato;
+        padding-left: 15px;
+    }
+    
