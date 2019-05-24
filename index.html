@@ -1,85 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>GOMYCODE Junior</title>
-        <link rel="icon" type="image/x-icon" href="assets/res/images/logo.ico" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">        
-        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/nav.css">
-        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.accueil.css">
-        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/footer.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GoMYCODE_Jenuior</title>
+    <link rel="icon" type="image/x-icon" href="../assets/res/images/icon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+        <!-------------------------------------------------------------------------->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/nav.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.accueil.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/footer.css">
+    
+</head>
 <body>
-    <!-------------------------------------------------------------------------------------------->
-<nav>
-    <div id="wrapper">
-        <div class="overlay"></div>
-        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
-            <ul class="nav sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="#">
-                       Brand
-                    </a>
-                </li>
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                <div></div>
-                    <a href="assets/gallery_page.html">gallery</a>
-                </li>
-                <li>
-                    <a href="#">Events</a>
-                </li>
-                <li>
-                    <a href="#">Team</a>
-                </li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Works <span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li class="dropdown-header">Dropdown heading</li>
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul>
-                </li>
-                <li>
-                    <a href="#">Services</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/maridlcrmn">Follow me</a>
-                </li>
-            </ul>
-        </nav>
-        <!-- /#sidebar-wrapper -->
-
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
-                <span class="hamb-top"></span>
-    			<span class="hamb-middle"></span>
-				<span class="hamb-bottom"></span>
-            </button>
-        </div>
-
-    </div>
-</nav>
-<<main>
+     <!-----------------------------------------NAV----------------------------------------------------------->
+              <div class="wrapper">
+                    <!-- Sidebar Holder -->
+                    <nav id="sidebar">
+                        <div class="sidebar-header">
+                            <h3>Bootstrap Sidebar</h3>
+                        </div>
+                        <ul class="list-unstyled components">
+                            <p>Dummy Heading</p>
+                            <li class="active">
+                                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
+                                    <li><a href="#">Home 1</a></li>
+                                <ul class="collapse list-unstyled" id="homeSubmenu">
+                                    <li><a href="#">Home 2</a></li>
+                                    <li><a href="#">Home 3</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">About</a>
+                                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
+                                <ul class="collapse list-unstyled" id="pageSubmenu">
+                                    <li><a href="#">Page 1</a></li>
+                                    <li><a href="#">Page 2</a></li>
+                                    <li><a href="#">Page 3</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- Page Content Holder -->
+                    <div id="content">
+                        <nav class="navbar navbar-default">
+                            <div class="container-fluid">
+        
+                                <div class="navbar-header">
+                                    <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                                        <i class="glyphicon glyphicon-align-left"></i>
+                                        <span>Toggle Sidebar</span>
+                                    </button>
+                                    <!---------------->
+                                    <div class="font_awesome">
+                                    <div class="container">
+                                            <div class="row">          
+                                                 <div class="col-sm-3">
+                                                     <i class="fa fa-4x fa-cogs" aria-hidden="true">
+                                                     </i><p class>GO</p>
+                                                    </div>
+                                                <div class="col-sm-3">
+                                                <i class="fa fa-4x fa-child"></i>
+                                                <p class>MY</p>
+                                                </div>
+                                               <div class="col-sm-3">
+                                                   <i class="fa fa-4x fa-code"></i>
+                                                   <p class>CODE</p>
+                                                </div>
+                                               <div class="col-sm-3">
+                                                   <i class="fa fa-4x fa-female"></i>
+                                                   <p class>KIDS-CAMP</p>
+                                                </div>
+                                            </div>
+                                           </div>
+                                        </div>
+                                    <!----------------------->
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>  
+ <!-----------------------------------------/NAV----------------------------------------------------------->
+ <main>
         <div class="carousel fade-carousel slide carousel-fade" data-ride="carousel"
         data-interval="5000" id="bs-carousel">
+            <!-- Overlay -->
+            <!-- Indicators -->
             <ol class="carousel-indicators">
                 <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
                 <li data-target="#bs-carousel" data-slide-to="1"></li>
                 <li data-target="#bs-carousel" data-slide-to="2"></li>
             </ol>
+            <!-- Wrapper for slides -->
             <div class="carousel-inner">
                 <div class="item slides active carousel-item">
                     <div class="slide-1">
@@ -97,68 +117,64 @@
                     </div>
                 </div>
                 <div class="hero">
-                    <hgroup>
-                         <h1>We are amazing</h1> 
-                         <h3>Get start your next awesome project</h3>
-                    </hgroup>
-                    <button class="btn btn-hero btn-lg" role="button">See all features</button>
+                    <button class="btn btn-hero btn-lg" role="button">GOMYCODE-KIDSCAMP-Activity</button>
                 </div>
             </div>
         </div>
-    </main>>
-        <!-------------------------------------------------------------------------------------------->
-
-		<footer id="myFooter">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <h5>Get started</h5>
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Sign up</a></li>
-                                <li><a href="#">See activity KIds</a></li>
-                            </ul>
+ </main>
+        <footer id="myFooter">
+            <div class="container">
+                <div class="row">
+                        <div class="col-sm-3">
+                                <div class="social_icon">
+                                        <a href="#" class="fa fa-facebook"></a>
+                                        <a href="#" class="fa fa-google"></a>
+                                        <a href="#" class="fa fa-linkedin"></a>
+                                        <a href="#" class="fa fa-youtube"></a>              
+                                        <a href="#" class="fa fa-instagram"></a>
+                                        <a href="#" class="fa fa-twitter"></a>
+                                </div>
                         </div>
-                        <div class="col-sm-4">
-                            <h5>About us</h5>
-                            <ul>
-                                <li><a href="#">Company Information</a></li>
-                                <li><a href="#">Contact us</a></li>
-                                <li><a href="#">Reviews</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-4">
-                            <h5>Maps</h5>
-                            <iframe id="map-container" frameborder="0" style="border:0"
-                            src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJOwg_06VPwokRYv534QaPC8g&key=AIzaSyBdJm9Amm4KALkKlZObWn40dcpRyH119zg" >
-                        </iframe>
-                        </div>
+                    <div class="col-sm-3">
+                        <h5>Get started</h5>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Sign up</a></li>
+                            <li><a href="#">See activity KIds</a></li>
+                        </ul>
                     </div>
-            </div>
-           <div id="bloc_newes">
-            <form >
+                    <div class="col-sm-3">
+                        <h5>About us</h5>
+                        <ul>
+                            <li><a href="#">Company Information</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Reviews</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <h5>Maps</h5>
+                        <iframe id="map-container" frameborder="0" style="border:0"
+                        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJOwg_06VPwokRYv534QaPC8g&key=AIzaSyBdJm9Amm4KALkKlZObWn40dcpRyH119zg" >
+                    </iframe>
+                    </div>
+                </div>
+
+        </div>
+        <form id="bloc_newes">
                 <div class="input-group newsletter">
                     <input type="email" class="form-control" placeholder=" Newsletters- Enter your email">
                     <button class="btn butt-newsletters" type="submit">Subscribe Now</button>
                 </div>
-            </form>
-            <div class="social-networks">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-google"></a>
-                <a href="#" class="fa fa-linkedin"></a>
-                <a href="#" class="fa fa-youtube"></a>
-                <a href="#" class="fa fa-instagram"></a>
-        </div>
-           </div>
-</footer>
-
-    <!-------------------------------------------------------------------------------------------->
+        </form>
+        </footer>
 </body>
-<!-------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="assets/js/nav.js"></script>
 <script src="assets/js/main.accueil.js"></script>
 <script src="assets/js/footer.js"></script>
-<!-------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------->
+
 </html>

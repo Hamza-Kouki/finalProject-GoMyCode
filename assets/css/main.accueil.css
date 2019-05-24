@@ -1,4 +1,19 @@
-.carousel-fade .carousel-inner .item {
+body:before {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: '';
+  background-image: url("../../assets/res/images/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  z-index: -1; }
+
+  /*************************************/
+  .carousel-fade .carousel-inner .item {
     -webkit-transition-property: opacity;
     transition-property: opacity;
   }
