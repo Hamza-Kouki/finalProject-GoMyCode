@@ -17,6 +17,9 @@ body:before {
 body {
     padding: 60px 0px;
 }
+.green{
+    background-color: #ff980038;
+}
 
 .event-list {
     list-style: none;
