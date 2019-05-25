@@ -17,6 +17,7 @@
         <!-------------------------------------------------------------------------->
     <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/nav.css">
     <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/main.galleryPage.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/inscription.css">
     <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/footer.css">
 
 </head>
@@ -32,7 +33,7 @@
                         <li class="page1"><a href="eventsPage.html" target="_blank">Events</a></li>
                         <li class="page2"><a href="galleryPage.html" target="_blank">Gallery</a></li>
                         <li class="page3"><a href="#bloc_newes" >Footer</a></li>
-                        <li class="page4"><a href="#">Get started</a></li>
+                        <li class="page4"><a href="#" id="myBtn">Get started</a></li>
                   </ul>
                 </div>
               </nav>
@@ -197,6 +198,67 @@
                             </div>
                           </div>
                </div>
+                   <!------------------inscription----POPUP-------------->
+    <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="inscription">
+                  <div class="container">
+                        <div class="title-inscription">Registration GOMYCODE-CAMPKIDS</div>
+                        <form  id="contactForm"> <!--action="/action_page.php"-->
+                          <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                          </div>
+                          <div class="form-group">
+                                  <label for="username">User name:</label>
+                                  <input type="text" class="form-control" id="username" placeholder="Enter User name" name="username" required>
+                                </div>
+                          <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter password" name="password" required>
+                          </div>
+                          <div class="form-group">
+                                  <label for="firstname">First name:</label>
+                                  <input type="texte" class="form-control" id="firstname" placeholder="Entre First name" name="firstname" required>
+                          </div>
+                          <div class="form-group">
+                                  <label for="lastname">Last name:</label>
+                                  <input type="texte" class="form-control" id="lastname" placeholder="Entre Last name" name="lastname" required>
+                          </div>
+                          <div class="form-group">
+                              <label for="optradio"> Select Gender</label>
+                                  <div class="radio">
+                                          <label><input type="radio" name="optradio" value="Male" id="male" checked onclick="getInputRadio()" >Male</label><br><br>
+                                          <label><input type="radio" name="optradio" value="female" id="famele" onclick="getInputRadio()">Female</label>
+                                        </div>
+                          </div>
+                          <div class="form-group">
+                                  <label for="remember"> Pick Days for Classes</label>
+                          <div class="checkbox" id="days">
+                                  <label><input type="checkbox" name="remember" value="Monday," id="Monday" onclick="getInputChekbox()"> Monday</label>
+                                  <label><input type="checkbox" name="remember"  value="Tuesday," id="Tuesday" onclick="getInputChekbox()"> Tuesday</label>
+                                  <label><input type="checkbox" name="remember" value="Wednesday," id="Wednesday" onclick="getInputChekbox()"> Wednesday</label>
+                                  <label><input type="checkbox" name="remember" value="Thursday," id="Thursday" onclick="getInputChekbox()"> Thursday</label>
+                                  <label><input type="checkbox" name="remember" value="Friday" id="Friday" onclick="getInputChekbox()"> Friday</label>
+                                </div>
+                          </div>
+                          <div class="form-group">
+                                  <label for="comment">Comment:</label>
+                                  <textarea class="form-control" rows="5" id="textarea" required></textarea>
+                                </div>
+                                <div class="alert">Your messege has been sent</div>
+                          <div class="checkbox">
+                            <label><input type="checkbox" name="remember"> Remember me</label>
+                          </div>
+                          <button type="submit" class="btn btn-default">Submit</button>
+                        </form>
+                      </div>
+                 </div>
+            </div>
+          
+          </div>
+        <!---------------------------------------------------->
 </main>
 
     <!-------------------------------------------------Footer-------------------------------------------------------->
@@ -218,7 +280,7 @@
                     <h5>Get started</h5>
                     <ul>
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#">Get started</a></li>
+                        <li><a href="#" id="myBtn">Get started</a></li>
                         <li><a href="../assets/galleryPage.html">See activity KIds</a></li>
                     </ul>
                 </div>
@@ -252,6 +314,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="../assets/js/nav.js"></script>
 <script src="../assets/js/main.galleryPage.js"></script>
+<script src="../assets/js/inscription.js"></script>
 <script src="../assets/js/footer.js"></script>
 <!--------------------------------------------------------------------------------------------------------------->
 
