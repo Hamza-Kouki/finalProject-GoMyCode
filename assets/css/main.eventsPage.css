@@ -14,9 +14,7 @@ body:before {
     background-position: top center;
     z-index: -1; }
     
-body {
-    padding: 60px 0px;
-}
+
 .green{
     background-color: #ff980038;
 }
